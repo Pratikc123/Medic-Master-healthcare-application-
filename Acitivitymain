@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ xmlns:app="http://schemas.android.com/apk/res-auto"
+ xmlns:tools="http://schemas.android.com/tools"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ android:background="#191709"
+ android:orientation="vertical"
+ android:weightSum="10"
+ tools:context=".MainActivity">
+ <RelativeLayout
+ android:layout_width="match_parent"
+ android:layout_height="0dp"
+ android:layout_weight="2">
+ <TextView
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_centerInParent="true"
+ android:text="MEDIC MASTER"
+ android:textColor="#F6E230"
+ android:textSize="35dp"
+ android:textStyle="bold" />
+ </RelativeLayout>
+ <GridLayout
+ android:layout_width="match_parent"
+ android:layout_height="0dp"
+ android:layout_weight="8"
+ android:columnCount="2"
+ android:columnOrderPreserved="false"
+ android:rowCount="3">
+ <androidx.cardview.widget.CardView
+ android:id="@+id/hosp"
+ android:layout_width="0dp"
+ android:layout_height="0dp"
+ android:layout_rowWeight="1
+ android:layout_columnWeight="1"
+ android:layout_marginLeft="16dp"
+ android:layout_marginRight="8dp"
+ android:layout_marginBottom="16dp"
+ app:cardCornerRadius="8dp"
+ app:cardElevation="8dp"
+>
+
+<LinearLayout
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_gravity="center"
+ android:orientatio
+n="vertical"
+>
+
+<ImageView
+ android:layout_width="wrap_content"
+ android:layout_height="139dp"
+ android:src="@drawable/hospital1"
+ />
+
+<TextView
+ android:layout_width="wrap_content"
+ android:layout_height="match_parent"
+ android:layout_gravity="center"
+ android:text="HOSPITAL"
+
+android:textAlignment="center"
+ android:textColor="@android:color/black"
+ android:textSize="18dp"
+ android:textStyle="bold" />
+ </LinearLayout
+>
+ </androidx.cardview.widget.CardView
+>
+
+<androidx.cardview.widget.CardView
+ android:id="@+id/bld"
+ android:layout_width="0dp"
+ android:layout_height="0dp"
+ android:layout_rowWeight="1"
+ android:layout_columnWeight="1"
+ android:layout_marginLeft="8dp"
+ android:layout_marginRight="16dp"
+ android:layout_marginBottom="16dp"
+ app:cardCornerRadius="8dp"
+ app:cardElevation="8dp"
+>
+
+<LinearLayout
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_gravity="center"
+ android:orientation="vertical"
+>
+<ImageView
+ android:layout_width="284px"
+ android:layout_height="175px"
+ android:layout_gravity="center_horizontal"
+ android:src="@drawable/blood" />
+
+<TextView
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_gravity="center"
+ android:text="BLOOD BANK"
+ android:textAlignment="center"
+ android:textColor="@android:color/black"
+ android:textSize="18dp"
+ android:textStyle="bold" />
+ </LinearLayout
+>
+ </androidx.cardview.widget.CardView
+>
+
+<androidx.cardview.widget.CardView
+ android:id="@+id/mri"
+ android:layout_width="0dp"
+ android:layout_height="0dp"
+ android:layout_rowWeight="1"
+ android:layout_columnWeight="1"
+ android:layout_marginLeft="16dp"
+ android:layout_marginRight="8dp"
+ android:layout_marginBottom="16dp"
+ app:cardCornerRadius="8dp"
+ app:cardElevation="8dp"
+>
+<LinearLayout
+ android:layout_widt
+h="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_gravity="center"
+ android:orientation="vertical"
+>
+
+<ImageView
+ android:src="@drawable/mri"
+ android:layout_width="284px"
+ android:layout_height="175px"
+ android:layout_gravity="center_horizontal" />
+
+<TextView
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_gravity="center"
+ android:text="MRI CENTERS"
+ android:textAlignment="center"
+ android:textColor="@android:color/black"
+android:textSize="18dp"
+android:textStyle="bold" />
+ </LinearLayout>
+ </androidx.cardview.widget.CardView>
+ <androidx.cardview.widget.CardView
+ android:id="@+id/dia"
+ android:layout_width="0dp"
+ android:layout_height="0dp"
+ android:layout_rowWeight="1"
+ android:layout_columnWeight="1"
+ android:layout_marginLeft="8dp"
+ android:layout_marginRight="16dp"
+ android:layout_marginBottom="16dp"
+ app:cardCornerRadius="8dp"
+ app:cardElevation="8dp">
+ <LinearLayout
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_gravity="center"
+ android:orientation="vertical">
+ <ImageView
+ android:src="@drawable/dialysis1"
+ android:layout_width="284px"
+ android:layout_height="175px"
+ android:layout_gravity="center_horizontal" />
+ <TextView
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_gravity="center"
+ android:text="DIALYSIS CENTERS"
+ android:textAlignment="center"
+ android:textColor="@android:color/black"
+ android:textSize="18dp"
+ android:textStyle="bold" />
+ </LinearLayout>
+ </androidx.cardview.widget.CardView>
+ </GridLayout>
+</LinearLayout>
